@@ -3,7 +3,7 @@
 
 #include <QString>
 namespace VN{
-//template <typename TEM_ALUNO>
+
 class Aluno{
 public:
     int matricula;

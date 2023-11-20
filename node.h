@@ -1,17 +1,22 @@
 #ifndef NODE_H
 #define NODE_H
-#include "aluno.h"
 
+#endif // NODE_H
 
 namespace VN{
-class node{
+template<class T>
+class Node{
 public:
-    node* next;
-    node* prev;
-    Aluno aluno;
 
-    static node* montaNode(Aluno T);
-    static void desmontaNode(node* nd);
+    Node<T>* next;
+    Node<T>* prev;
+    T dado;
+
+    Node(const T dado): dado(dado), next(nullptr) {};
+
+
+
+
 };
+
 }
-#endif // NODE_H

@@ -10,20 +10,16 @@ CONFIG += c++17
 
 SOURCES += \
     aluno.cpp \
-    arquivo.cpp \
     lista.cpp \
     main.cpp \
-    mainwindow.cpp \
-    node.cpp \
-    vetor_alunos.cpp
+    mainwindow.cpp
 
 HEADERS += \
     aluno.h \
-    arquivo.h \
     lista.h \
     mainwindow.h \
     node.h \
-    vetor_alunos.h
+    tabela_hash.h
 
 FORMS += \
     mainwindow.ui

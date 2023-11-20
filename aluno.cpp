@@ -1,6 +1,8 @@
 #include "aluno.h"
 
+
 namespace VN {
+
 Aluno::Aluno(){
     matricula = -1;
     nome = "";

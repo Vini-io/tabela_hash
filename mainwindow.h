@@ -2,7 +2,8 @@
 #define MAINWINDOW_H
 
 #include "aluno.h"
-#include "arquivo.h"
+#include "tabela_hash.h"
+#include <lista.h>
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -19,13 +20,9 @@ public:
 
 private slots:
     void on_btn_consultar_clicked();
-
     void on_btn_Inserir_clicked();
-
     void on_pushButton_clicked();
-
     void on_pushButton_2_clicked();
-
     void on_btn_remover_clicked();
 
 private:
@@ -33,7 +30,7 @@ private:
 
     Ui::MainWindow *ui;
     VN::Aluno *objAluno;
-    VN::arquivo arq;
-    VN::Vetor_alunos vetor_alunos;
+    VN::Tabela_hash<VN::Aluno> tabela;
+
 };
 #endif // MAINWINDOW_H
